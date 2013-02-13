@@ -2,7 +2,7 @@
 
 We denote four genotypes: $AB$, $Ab$, $aB$, and $ab$.
 
-We denote their frequencies as $f_{i,j}$, their fitness as $\omega_{i,j}$ and their mutation rates as $\mu_{i,j}$ for $i,j \in {A,a,B,b}$.
+We denote their frequencies as $f_{i,j}$, their fitness as $\omega_{i,j}$ and their mutation rates as $\mu_{i,j}$ for $i = A,a ,j = B,b$.
 
 If $f=(f_{AB}, f_{Ab}, f_{aB}, f_{ab})$ is the frequency vector, then the mutation matrix $M$ is:
 
@@ -31,5 +31,7 @@ The final non-linear evolution operator $E$ is given by:
 $$
 E f = \frac{M S f}{\bar{\omega}}
 $$
+
+where $ \bar{\omega} = \sum_{i = A,a ,j = B,b}{f_{i,j} \omega_{i,j}} $ is the population mean fitness.
 
 Starting at the bottom of the fitness landscape, $f=(0,0,0,1)$ we are interested in the mean time to adaptation which is defined by the mean time to arrive to the equilibrium frequency vector $ f^* $ defined by $ Ef^* = f^* $.
