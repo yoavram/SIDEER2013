@@ -16,4 +16,20 @@ $$M=
 $$
 where $\beta$ and $\delta$ are the probabilities that mutations are beneficial or deleterious, respectively ($\mu$ measures the probability that a fitness changing mutation occurred, so that $\beta+\delta=1$).
 
-The selection matrix given a multpl
+The selection matrix given multiplicative selection so that $\omega_{i,j} = (1-s_i)(1-s_j)$ and $s_A=s_B=0$ is:
+
+$$S=
+\begin{array}{cccc}
+1 & 0 & 0 & 0 \\\
+0 & 1-s_b & 0 & 0\\\
+0 & 0 & 1-s_a & 0 \\\
+0 & 0 & 0 & (1-s_a)(1-s_b) \\\
+\end{array} 
+$$
+
+The final non-linear evolution operator $E$ is given by:
+$$
+E f = \frac{M S f}{\bar{\omega}}
+$$
+
+Starting at the bottom of the fitness landscape, $f=(0,0,0,1)$ we are interested in the mean time to adaptation which is defined by the mean time to arrive to the equilibrium frequency vector $ f^* $ defined by $ Ef^* = f^* $.
