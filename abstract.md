@@ -1,5 +1,6 @@
-# The role of stress-induced mutation in the emergence of complex adaptations
-## Yoav Ram, Department of Molecular Biology and Ecology of Plants, Tel-Aviv University
+% The role of stress-induced mutation in the emergence of complex adaptations
+% Yoav Ram
+% Department of Molecular Biology and Ecology of Plants, Tel-Aviv University
 
 
 Stress-induced mutation, the phenomena in which cells increase their mutation rate in response to stress and maladaptation, has been observed in bacteria, yeast and cancer cells. 
