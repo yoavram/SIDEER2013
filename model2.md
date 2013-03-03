@@ -23,3 +23,8 @@ $$
 Nq_n + O(Nq_n^2) \Rightarrow
 1-(1-q_n)^N \approx Nq_n
 $$
+The waiting time for the appearance of *AB* follows a geometric distribution with expectation:
+$$
+E[T] \approx 1/Nq_n
+$$
+We therefore need to find $q_n$.
